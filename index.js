@@ -1,7 +1,7 @@
 let home = 0;
 let away = 0;
 let homeScore = document.getElementById("home-score");
-let guestScore = document.getElementById("guest-score");
+let awayScore = document.getElementById("away-score");
 
 function addHomeScore(number) {
   home += number;
@@ -9,11 +9,11 @@ function addHomeScore(number) {
 }
 function addAwayScore(number) {
   away += number;
-  guestScore.textContent = away;
+  awayScore.textContent = away;
 }
 function resetScore() {
   home = 0;
   away = 0;
   homeScore.textContent = home;
-  guestScore.textContent = away;
+  awayScore.textContent = away;
 }
